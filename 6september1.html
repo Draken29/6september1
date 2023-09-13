@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .girrf{
+            background-color: blue;
+            display: grid;
+            grid-template-columns:minmax(100px,400px) 200px;
+            grid-template-rows:repeat(7,100px);
+             column-gap: 10px;
+            row-gap: 10px; 
+            gap: 10px 10px;             
+        }
+        div{
+            background-color: aqua;
+            margin: 3px;
+        }
+         .item1{
+            grid-column: 1/4;
+            grid-row:5;
+        } 
+    </style>
+</head>
+<body>
+    <main class="girrf">
+        <div class="item1">item1</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item1</div>
+        <div>item2</div>
+    </main>
+</body>
+</html>
